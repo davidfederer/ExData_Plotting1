@@ -8,4 +8,4 @@ lines(data$datetime, subMetering3, type="l", col = "blue")
 legend("topright", pch = "_", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), cex=0.8)
 
 dev.copy(png, file = "plot3.png", width=504, height=504)
-dev.off()
+dev.off();

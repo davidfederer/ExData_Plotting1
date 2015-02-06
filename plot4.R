@@ -11,10 +11,10 @@ with(data, {
   plot(datetime, subMetering1, type = "l", xlab="", ylab="Energy sub metering", col="black")
   lines(data$datetime, subMetering2, type="l", col = "red")
   lines(data$datetime, subMetering3, type="l", col = "blue")
-  legend("topright", inset= 0.1, pch = "_", col = c("black", "red", "blue"), cex=0.8, legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n", xjust=0)
+  legend("topright", pch = "_", col = c("black", "red", "blue"), cex=0.8, legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty="n", xjust=0.5)
   
   plot(datetime, Global_reactive_power, type="l")
 })
 
 dev.copy(png, file = "plot4.png", width=504, height=504) 
-dev.off()
+dev.off();
